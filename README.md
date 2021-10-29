@@ -2,7 +2,7 @@
 Test repo for Final Projects, created October 26, 2021
 
 - Craft Breweries
-- We choose this topic because it is important that everyone has access to craft beer
+- We choose this topic because having breweries in your neighborhood will make people more happy.
 - Our Data comes from multiple datasets
   - Our 1st set of data contains a list of all the breweries in the United States along with their location
   - Our 2nd set of data contains Unemployment data by county from 2000 to 2019, as well as median household income for 2019
