@@ -7,9 +7,7 @@ Test repo for Final Projects, created October 26, 2021
   - Our 1st set of data contains a list of all the breweries in the United States along with their location
   - Our 2nd set of data contains Unemployment data by county from 2000 to 2019, as well as median household income for 2019
   - Our 3rd set of data contains Educational data by county, showing the level of education completed
-    -The levels of Education in our data set are 
-      -No Diploma, High School Diploma, Some College, 4 Year College 
-
+ 
 ## Project Objective 
 - We are seeking to identify counties with low unemployment and high median household incomes and display in a map. We then want to take this data to make reccomendations to potential craft brewers on where they should open a craft brewery.
 
