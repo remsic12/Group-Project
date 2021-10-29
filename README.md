@@ -11,7 +11,7 @@ Test repo for Final Projects, created October 26, 2021
       -No Diploma, High School Diploma, Some College, 4 Year College 
 
 ## Project Objective 
--We are seeking to identify counties with low unemployment and high median household incomes and display in a map. We then want to take this data to make reccomendations to potential craft brewers on where they should open a craft brewery.
+- We are seeking to identify counties with low unemployment and high median household incomes and display in a map. We then want to take this data to make reccomendations to potential craft brewers on where they should open a craft brewery.
 
 ## Communication Protocol 
 - Our team is utilizing our slack channel to ensure we are working together to complete all steps
