@@ -21,3 +21,8 @@ Test repo for Final Projects, created October 26, 2021
   - Eric is the Triangle Role, he is responsible for creating a mockup of a machine learning model.
   - Lisa is the Circle Role, she is responsible for creating the database.
   - John is the X Role, he will decide which technologies to use for each step in the project.
+
+## Machine Learning Overview
+- Data was read in from the available CSVs.
+- The data required some editing, cleaning and transformation before it could be presented
+- Visuals were used to identify clusters, which were added to datasets and broken into dataframes to be used for further analysis in the coming weeks
