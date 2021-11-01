@@ -35,3 +35,13 @@ Test repo for Final Projects, created October 26, 2021
 - The final model was built using four clusters
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
+## Database Overview
+- The intial version of the database for this project was created through the ingestion of csv files into pandas dataframes via Jupyter Notebook.
+- This csv files are listed below
+1. brewery_listing.csv
+2. education.csv
+3. UIC_codes.csv
+4. unemployment.csv
+5. uscities.csv
+- The Jupyter Notebook containing the preliminary data (Capstone_initial_erd.ipynb) was pushed to the branch labeled "LisaMcD_branch"
+
