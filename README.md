@@ -26,3 +26,12 @@ Test repo for Final Projects, created October 26, 2021
 - Data was read in from the available CSVs.
 - The data required some editing, cleaning and transformation before it could be presented
 - Visuals were used to identify clusters, which were added to datasets and broken into dataframes to be used for further analysis in the coming weeks
+
+## Machine Learning Explanation and Specifics
+- Columns were dropped that were not going to be used or were identical to another columns (ex: County Name and FIPS code hold the same data in different formats, FIPS code was retained for its easy joining capability to other dataframes.
+- Some data cleaning was needed to convert object columns to integers. This included removing commas from the entires. A label encoder was used to transform State into a numeric value
+- MinMaxScalar was used to present the data in a way that would not skew the results for large numbers (i.e. population or median income)
+- An elbow graph was created to determine the number of clusters to identify
+- The final model was built using four clusters
+- The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
+
