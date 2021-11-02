@@ -47,5 +47,5 @@ Test repo for Final Projects, created October 26, 2021
 - The Jupyter Notebook containing the preliminary data (Capstone_initial_erd.ipynb) was pushed to the branch labeled "LisaMcD_branch"
 
 ## Database Explanation and Specifics
-- Relevant variables from each of the dataframes were ultimately combined into one dataset, with the goal of cleaning and exporting the final dataset to a sqlite table that could be used for the project model
+- Relevant variables from each of the dataframes were ultimately combined into one dataset, with the goal of cleaning and exporting the final dataset to a SQL database that could be used for the project model
 - This is just a prelimiary example, so the method will likely change as necessary to meet the needs of the group
