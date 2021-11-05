@@ -22,7 +22,10 @@ Test repo for Final Projects, created October 26, 2021
   - Lisa is the Circle Role, she is responsible for creating the database.
   - John is the X Role, he will decide which technologies to use for each step in the project.
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 73178d4a614adfc94f3d9a37db9b38d64d034139
 
 
 ## Machine Learning Overview
@@ -51,4 +54,7 @@ Test repo for Final Projects, created October 26, 2021
 ## Database Explanation and Specifics
 - Relevant variables from each of the dataframes were ultimately combined into one dataset, with the goal of cleaning and exporting the final dataset to a SQL database that could be used for the project model
 - This is just a prelimiary example, so the method will likely change as necessary to meet the needs of the group
+<<<<<<< HEAD
 >>>>>>> a801eecd54e07f5d8f7480fc46a89429b5a98ded
+=======
+>>>>>>> 73178d4a614adfc94f3d9a37db9b38d64d034139
