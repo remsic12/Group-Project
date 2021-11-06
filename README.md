@@ -36,16 +36,42 @@ Test repo for Final Projects, created October 26, 2021
 - The final model was built using four clusters
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
-## Database Overview
-- The intial version of the database for this project was created through the ingestion of csv files into pandas dataframes via Jupyter Notebook.
-- This csv files are listed below
-1. brewery_listing.csv
-2. education.csv
-3. UIC_codes.csv
-4. unemployment.csv
-5. uscities.csv
-- The Jupyter Notebook containing the preliminary data (Capstone_initial_erd.ipynb) was pushed to the branch labeled "LisaMcD_branch"
+## Database Overview and Explanation
+The group decided that a postgres SQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the deep machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
 
-## Database Explanation and Specifics
-- Relevant variables from each of the dataframes were ultimately combined into one dataset, with the goal of cleaning and exporting the final dataset to a SQL database that could be used for the project model
-- This is just a prelimiary example, so the method will likely change as necessary to meet the needs of the group
+Ingested Files:
+- brewery_listing.csv
+- education.csv
+- UIC_codes.csv
+- unemployment.csv
+- uscities.csv
+
+DataFrames Exported to pgAdmin:
+- breweries_df to breweries table
+- education_df to education table
+- uic_df to uic table
+- unemployment_df to unemployment table
+
+## Database Specifics
+The database consists of nine SQL tables, the details are listed below:
+- breweries: Contains the name and location of each brewery by city, county and state. 
+- breweries_distinct: Contains the distinct values from the breweries table.
+- breweries_key: Contains the values from the breweries_distinct table plus a new concatenated column labeled "bkey". 
+  - Rationale: "County" and "State" columns were concatenated to create a key due to the lack of a FIPS column.
+- county_breweries: Contains the total number of breweries by state and county and the "bkey" column. 
+- education: Contains adult education information.
+- uic: Contains demographic information by state, county and community type.
+- uic_key: Contains the values from uic plus a concatenated field ("bkey") to link with the county_brewery table if needed.
+- unemployment: Contains county and state level unemployment demographic information. 
+- demographics: Contains the values from education, uic_key and unemployment tables. 
+  - Rationale: The tables were consolidated for ease of use with the machine learning model.
+ 
+ The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally.
+
+
+
+
+
+
+
+
