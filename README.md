@@ -37,7 +37,7 @@ Test repo for Final Projects, created October 26, 2021
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
 ## Database Overview and Explanation
-The group decided that a postgres SQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the deep machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
+The group decided that a postgres SQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
 
 Ingested Files:
 - brewery_listing.csv
