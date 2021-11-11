@@ -1,9 +1,6 @@
 -- Data clean-up
 ALTER TABLE breweries
 DROP COLUMN index;
--- Removed due to some inaccuracies noted 
-ALTER TABLE breweries
-DROP COLUMN county_fips;
 ALTER TABLE education
 DROP COLUMN index;
 ALTER TABLE uic
