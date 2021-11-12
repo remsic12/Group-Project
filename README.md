@@ -13,15 +13,24 @@ Test repo for Final Projects, created October 26, 2021
 
 ## Communication Protocol 
 - Our team is utilizing our slack channel to ensure we are working together to complete all steps
-- We are having a stand up meeting set daily
-  - Monday through Friday we will meet at 6pm
-  - Saturday and Sunday we will meet at 10am 
+- We are meeting during class 2x a week and have a stand up meeting on the weekend
+  - Tuesday and Thursday we meet from 7-9pm
+  - Saturday and Sunday we meet at 10am 
 - We also assigned team member roles using the play station button method, this will help us hold each other accountable for what we are trying to do.
   - Clayton is the Square Role, meaning he is responsible for the repository. 
   - Eric is the Triangle Role, he is responsible for creating a mockup of a machine learning model.
   - Lisa is the Circle Role, she is responsible for creating the database.
   - John is the X Role, he will decide which technologies to use for each step in the project.
 
+## Project Findings
+- By using our machine learning model we were able to organize our data into 4 Clusters, within the 4 Clusters we have identified 5 Counties where we found it optimal to open a new brewery. Please see below for those Counties within their Clusters.
+![Cluster 0 Summary](https://user-images.githubusercontent.com/79228491/141518522-4803c452-af6b-4373-b87a-228eef4b71a0.PNG)
+
+![Cluster 1 Summary](https://user-images.githubusercontent.com/79228491/141518535-d8df0531-1604-4cb9-b566-27649caa1d13.PNG)
+
+![Cluster 2 Summary](https://user-images.githubusercontent.com/79228491/141518545-51ff91db-591f-4e3d-b5ae-f41cc3293ad7.PNG)
+
+![Cluster 3 Summary](https://user-images.githubusercontent.com/79228491/141518549-232a9a8b-81e4-4bb0-aa4f-daedb3cf52d8.PNG)
 
 ## Machine Learning Overview
 - Data was read in from the available CSVs.
