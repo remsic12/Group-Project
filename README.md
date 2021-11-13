@@ -46,7 +46,7 @@ Test repo for Final Projects, created October 26, 2021
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
 ## Database Overview and Explanation
-The group decided that a postgreSQL database would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
+The group decided that a postgreSQL database (DB) would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
 
 Ingested Files:
 - brewery_listing.csv
@@ -73,11 +73,11 @@ The database consists of eight SQL tables, the details are listed below:
 - brew_demographics: Contains the values from county_breweries and demographics tables.
   - Created as an alternative table for use with the machine learning model.
   
-An image of the Group-Project DB ERD is displayed below, the file is located in the Group-Project\Resources\Images folder. The file name is Group-Project.pgerd.png.
+An image of the Group-Project database entity relationship diagram (ERD) is displayed below, the file is located in the Group-Project\Resources\Images folder. The file name is Group-Project.pgerd.png.
  
 The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally. Copies of these files reside in the Group-Project\Resources\data subfolder. The file names are Capstone_initial_erd.ipynb and file_prep.sql. 
 
-###### Group-Project DB ERD
+###### Group-Project Datbase ERD
 ![Group-Project_pgerd](https://github.com/remsic12/Group-Project/blob/main/Resources/Images/Group-Project.pgerd.png)
 
 
