@@ -46,7 +46,7 @@ Test repo for Final Projects, created October 26, 2021
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
 ## Database Overview and Explanation
-The group decided that a postgres SQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
+The group decided that a postgreSQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
 
 Ingested Files:
 - brewery_listing.csv
@@ -62,20 +62,21 @@ DataFrames Exported to pgAdmin:
 - unemployment_df to unemployment table
 
 ## Database Specifics
-The database consists of nine SQL tables, the details are listed below:
-- breweries: Contains the name and location of each brewery by city, county and state. 
+The database consists of eight SQL tables, the details are listed below:
+- breweries: Contains the name and location of each brewery by FIPS, city, county and state. 
 - breweries_distinct: Contains the distinct values from the breweries table.
-- breweries_key: Contains the values from the breweries_distinct table plus a new concatenated column labeled "bkey". 
-  - Rationale: "County" and "State" columns were concatenated to create a key due to the lack of a FIPS column.
-- county_breweries: Contains the total number of breweries by state and county and the "bkey" column. 
+- county_breweries: Contains the count of the total number of breweries by FIPS (target)
 - education: Contains adult education information.
 - uic: Contains demographic information by state, county and community type.
-- uic_key: Contains the values from uic plus a concatenated field ("bkey") to link with the county_brewery table if needed.
-- unemployment: Contains county and state level unemployment demographic information. 
-- demographics: Contains the values from education, uic_key and unemployment tables. 
-  - Rationale: The tables were consolidated for ease of use with the machine learning model.
+- unemployment contains information relevant to employment status by coummunity type.
+- demographics: Contains the values from education, uic and unemployment tables. 
+  - Rationale: The tables were consolidated for ease of use with the machine learning model (features).
+- brew_demographics: Contains the values from county_breweries and demographics tables.
+  - Created as an alternative table for use with the machine learning model.
+  
+An image of the Group-Project DB ERD is in the Group-Project\Resources\Images folder.
  
- The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally.
+The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally. Copies of these files reside in the Group-Project\Resources\data subfolder. The file names are: Capstone_initial_erd.ipynb,file_prep.sql. 
 
 
 
