@@ -53,7 +53,6 @@ Ingested Files:
 - education.csv
 - UIC_codes.csv
 - unemployment.csv
-- uscities.csv
 
 DataFrames Exported to pgAdmin:
 - breweries_df to breweries table
