@@ -13,15 +13,24 @@ Test repo for Final Projects, created October 26, 2021
 
 ## Communication Protocol 
 - Our team is utilizing our slack channel to ensure we are working together to complete all steps
-- We are having a stand up meeting set daily
-  - Monday through Friday we will meet at 6pm
-  - Saturday and Sunday we will meet at 10am 
+- We are meeting during class 2x a week and have a stand up meeting on the weekend
+  - Tuesday and Thursday we meet from 7-9pm
+  - Saturday and Sunday we meet at 10am 
 - We also assigned team member roles using the play station button method, this will help us hold each other accountable for what we are trying to do.
   - Clayton is the Square Role, meaning he is responsible for the repository. 
   - Eric is the Triangle Role, he is responsible for creating a mockup of a machine learning model.
   - Lisa is the Circle Role, she is responsible for creating the database.
   - John is the X Role, he will decide which technologies to use for each step in the project.
 
+## Project Findings
+- By using our machine learning model we were able to organize our data into 4 Clusters, within the 4 Clusters we have identified 5 Counties where we found it optimal to open a new brewery. Please see below for those Counties within their Clusters.
+![Cluster 0 Summary](https://user-images.githubusercontent.com/79228491/141518522-4803c452-af6b-4373-b87a-228eef4b71a0.PNG)
+
+![Cluster 1 Summary](https://user-images.githubusercontent.com/79228491/141518535-d8df0531-1604-4cb9-b566-27649caa1d13.PNG)
+
+![Cluster 2 Summary](https://user-images.githubusercontent.com/79228491/141518545-51ff91db-591f-4e3d-b5ae-f41cc3293ad7.PNG)
+
+![Cluster 3 Summary](https://user-images.githubusercontent.com/79228491/141518549-232a9a8b-81e4-4bb0-aa4f-daedb3cf52d8.PNG)
 
 ## Machine Learning Overview
 - Data was read in from the available CSVs.
@@ -37,14 +46,13 @@ Test repo for Final Projects, created October 26, 2021
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
 ## Database Overview and Explanation
-The group decided that a postgres SQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
+The group decided that a postgreSQL data base would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin Postgres for additional data cleanup and normalization before export to the machine learning model. The string method was used for the export from Jupyter Notebook to pgAdmin.
 
 Ingested Files:
 - brewery_listing.csv
 - education.csv
 - UIC_codes.csv
 - unemployment.csv
-- uscities.csv
 
 DataFrames Exported to pgAdmin:
 - breweries_df to breweries table
@@ -53,20 +61,21 @@ DataFrames Exported to pgAdmin:
 - unemployment_df to unemployment table
 
 ## Database Specifics
-The database consists of nine SQL tables, the details are listed below:
-- breweries: Contains the name and location of each brewery by city, county and state. 
+The database consists of eight SQL tables, the details are listed below:
+- breweries: Contains the name and location of each brewery by FIPS, city, county and state. 
 - breweries_distinct: Contains the distinct values from the breweries table.
-- breweries_key: Contains the values from the breweries_distinct table plus a new concatenated column labeled "bkey". 
-  - Rationale: "County" and "State" columns were concatenated to create a key due to the lack of a FIPS column.
-- county_breweries: Contains the total number of breweries by state and county and the "bkey" column. 
+- county_breweries: Contains the count of the total number of breweries by FIPS (target)
 - education: Contains adult education information.
 - uic: Contains demographic information by state, county and community type.
-- uic_key: Contains the values from uic plus a concatenated field ("bkey") to link with the county_brewery table if needed.
-- unemployment: Contains county and state level unemployment demographic information. 
-- demographics: Contains the values from education, uic_key and unemployment tables. 
-  - Rationale: The tables were consolidated for ease of use with the machine learning model.
+- unemployment contains information relevant to employment status by coummunity type.
+- demographics: Contains the values from education, uic and unemployment tables. 
+  - Rationale: The tables were consolidated for ease of use with the machine learning model (features).
+- brew_demographics: Contains the values from county_breweries and demographics tables.
+  - Created as an alternative table for use with the machine learning model.
+  
+An image of the Group-Project DB ERD is in the Group-Project\Resources\Images folder.
  
- The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally.
+The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally. Copies of these files reside in the Group-Project\Resources\data subfolder. The file names are: Capstone_initial_erd.ipynb and file_prep.sql. 
 
 
 
