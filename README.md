@@ -75,7 +75,7 @@ The database consists of eight SQL tables, the details are listed below:
   
 An image of the Group-Project DB ERD is in the Group-Project\Resources\Images folder.
  
-The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally. Copies of these files reside in the Group-Project\Resources\data subfolder. The file names are: Capstone_initial_erd.ipynb,file_prep.sql. 
+The Jupyter Notebook and SQL code used for data clean up and table creation were shared with the group so that each member could create their own version of the data base locally. Copies of these files reside in the Group-Project\Resources\data subfolder. The file names are: Capstone_initial_erd.ipynb and file_prep.sql. 
 
 
 
