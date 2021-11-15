@@ -80,6 +80,8 @@ The Jupyter Notebook and SQL code used for data exploration and table creation w
 ###### Group-Project Datbase ERD
 ![Group-Project_pgerd](https://github.com/remsic12/Group-Project/blob/main/Resources/Images/Group-Project.pgerd.png)
 
+## Project Presentation
+- Attached is the link to the Google Slides Presentation
 
 
 
