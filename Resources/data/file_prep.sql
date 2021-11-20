@@ -1,29 +1,30 @@
 -- Add keys
 -- Primary key
-ALTER TABLE education ADD PRIMARY KEY ("FIPS")
+ALTER TABLE education ADD PRIMARY KEY ("FIPS");
 --ALTER TABLE education 
 --DROP CONSTRAINT "FIPS";
-
 -- Foreign keys
 ALTER TABLE "uic"
 ADD CONSTRAINT "FIPS"
-FOREIGN KEY ("FIPS")REFERENCES education
+FOREIGN KEY ("FIPS")REFERENCES education;
+
 ALTER TABLE "unemployment"
 ADD CONSTRAINT "FIPS"
-FOREIGN KEY ("FIPS")REFERENCES education
-ALTER TABLE breweries
-ADD CONSTRAINT "FIPS"
-FOREIGN KEY ("FIPS")REFERENCES education
+FOREIGN KEY ("FIPS")REFERENCES education;
 
 -- Data clean-up
 ALTER TABLE breweries
 DROP COLUMN index;
+
 ALTER TABLE education
 DROP COLUMN index;
+
 ALTER TABLE education
 DROP COLUMN "Area name";
+
 ALTER TABLE uic
 DROP COLUMN index;
+
 ALTER TABLE unemployment
 DROP COLUMN index;
 
@@ -34,13 +35,19 @@ SELECT DISTINCT
 "FIPS"
 INTO breweries_distinct
 FROM breweries;
+
 -- Get the number of breweries per county (target)
 DROP TABLE IF EXISTS county_breweries;
 SELECT "FIPS",
 COUNT("Brewery" ) AS county_brewery_count
 INTO county_breweries
 FROM breweries_distinct
-GROUP BY "FIPS";  
+GROUP BY "FIPS";
+
+-- Add Foreign Key
+ALTER TABLE county_breweries
+ADD CONSTRAINT "FIPS"
+FOREIGN KEY ("FIPS")REFERENCES education;
 
 -- Create one table to hold all of the demographic information (features)
 DROP TABLE IF EXISTS demographics;
@@ -112,8 +119,8 @@ LEFT JOIN uic
 ON(ed."FIPS"=uic."FIPS")
 LEFT JOIN unemployment AS un
 ON (ed."FIPS"=un."FIPS");
-
--- Add county brewery count to demographics table for optional table ingesion for machine learning. 
+				 
+-- Add county brewery count to demographics table for optional table ingesion for machine learning.			 
 DROP TABLE IF EXISTS brew_demographics;
 SELECT DISTINCT d."FIPS",     
     d."State", 
@@ -183,4 +190,3 @@ FROM demographics AS d
 LEFT JOIN 
 county_breweries AS cb
 ON(d."FIPS"=cb."FIPS");
-
