@@ -11,12 +11,6 @@ Test repo for Final Projects, created October 26, 2021
 ## Project Objective 
 - We are seeking to identify counties with low unemployment and high median household incomes and display in a map. We then want to take this data to make reccomendations to potential craft brewers on where they should open a craft brewery.
 
-## Communication Protocol 
-- Our team is utilizing our slack channel to ensure we are working together to complete all steps
-- We are meeting during class 2x a week and have a stand up meeting on the weekend
-  - Tuesday and Thursday we meet from 7-9pm
-  - Saturday and Sunday we meet at 10am 
-- We also assigned team member roles using the play station button method, this will help us hold each other accountable for what we are trying to do.
   - Clayton is the Square Role, meaning he is responsible for the repository. 
   - Eric is the Triangle Role, he is responsible for creating a mockup of a machine learning model.
   - Lisa is the Circle Role, she is responsible for creating the database.
