@@ -18,13 +18,13 @@ Test repo for Final Projects, created October 26, 2021
 
 ## Project Findings
 - By using our machine learning model we were able to organize our data into 4 Clusters, within the 4 Clusters we have identified 5 Counties where we found it optimal to open a new brewery. Please see below for those Counties within their Clusters.
-![Cluster 0 Summary](https://user-images.githubusercontent.com/79228491/141518522-4803c452-af6b-4373-b87a-228eef4b71a0.PNG)
+![Cluster 0 - Final](https://user-images.githubusercontent.com/85916216/143153211-5f325e3a-9787-47a4-a26a-7b5535f19b14.png)
 
-![Cluster 1 Summary](https://user-images.githubusercontent.com/79228491/141518535-d8df0531-1604-4cb9-b566-27649caa1d13.PNG)
+![Cluster 1 - Final](https://user-images.githubusercontent.com/85916216/143153230-e946469f-759a-4623-a9d3-118e097c4e31.png)
 
-![Cluster 2 Summary](https://user-images.githubusercontent.com/79228491/141518545-51ff91db-591f-4e3d-b5ae-f41cc3293ad7.PNG)
+![Cluster 2 - Final](https://user-images.githubusercontent.com/85916216/143153248-80947eec-77c2-4865-a451-c82698ec4907.png)
 
-![Cluster 3 Summary](https://user-images.githubusercontent.com/79228491/141518549-232a9a8b-81e4-4bb0-aa4f-daedb3cf52d8.PNG)
+![Cluster 3 - Final](https://user-images.githubusercontent.com/85916216/143153262-0143a48b-b2e8-4213-92af-b1a5610b5068.png)
 
 ## Machine Learning Overview
 - Data was read in from the available CSVs.
