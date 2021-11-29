@@ -78,6 +78,9 @@ The Jupyter Notebook and SQL code used for data exploration and table creation w
 - Attached is the link to the Google Slides Presentation
 - https://docs.google.com/presentation/d/1kWie1z2P4awKJPUh3WpI64eJdcWfEsvfpYVuYOAeHro/edit#slide=id.p
 
+## Tableau Dashboard
+- Below is the dashboard for our team's presentation
+- https://public.tableau.com/app/profile/clayton.remsik/viz/USCraftBreweries-WheretoputyournextBrewery/MedianHouseholdIncomeScatterPlot?publish=yes
 
 
 
