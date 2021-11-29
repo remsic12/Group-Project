@@ -40,7 +40,7 @@
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
 
 ## Database Overview and Explanation
-The group decided that a postgreSQL database would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The resulting DataFrames were then exported as tables to pgAdmin for additional data cleanup and normalization before export to the machine learning model. The resulting files were then exported to the machine learning model where additional data manipulation was performed before ingestion into the model. The string method was used for the export from Jupyter Notebook to pgAdmin and from pgAdmin to the learning model.
+The group decided that a postgreSQL database would be the best fit for this project. The relevant csv data files were first ingested into Pandas DataFrames via Jupyter Notebook. The DataFrames were then exported to pgAdmin for additional data cleanup and creation of SQL tables. The resulting tables were exported to the Jupyter Notebook for the machine learning model where additional data manipulation was performed. The string method was used for the export from Jupyter Notebook to pgAdmin and from pgAdmin to the learning model.
 
 Ingested Files:
 - brewery_listing.csv
