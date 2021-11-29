@@ -79,7 +79,7 @@ The Jupyter Notebook and SQL code used for data exploration and table creation w
 - https://docs.google.com/presentation/d/1kWie1z2P4awKJPUh3WpI64eJdcWfEsvfpYVuYOAeHro/edit#slide=id.p
 
 ## Tableau Dashboard
-- Below is the dashboard for our team's presentation
+- Below is our team's created dashboard for our presentation
 - https://public.tableau.com/app/profile/clayton.remsik/viz/USCraftBreweries-WheretoputyournextBrewery/MedianHouseholdIncomeScatterPlot?publish=yes
 
 
