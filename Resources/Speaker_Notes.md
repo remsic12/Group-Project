@@ -1,13 +1,13 @@
 # Final Presentation Speaker Notes
 
 Slide 1 - John
-- Introduce group, including names of all people
+- Introduce group, including names of all people.
 
 Slide 2 - John
-- Introduce and discuss selected topic
+- Introduce and discuss selected topic.
 
 Slide 3 - John
-- Go over interesting beer facts
+- Go over interesting beer facts.
 - This is to grab reader’s attention. Flow should be natural and excitement should be the main goal.
 
 Slide 4 - John
@@ -41,11 +41,11 @@ Slide 10 – Clayton
 - Call out unique features, such as County Search.
 
 Slide 11 – John
-- Discuss our group’s recommendations for further analysis
-- Information is on the slide and will be read
+- Discuss our group’s recommendations for further analysis.
+- Information is on the slide and will be read.
 
 Slide 12 – John
-- Review what we would have done differently and how those changes could have impacted our results
+- Review what we would have done differently and how those changes could have impacted our results.
 
 Slide 13 – John
-- Wrap up presentation, give thanks to audience, and open the floor to questions
+- Wrap up presentation, give thanks to audience, and open the floor to questions.
