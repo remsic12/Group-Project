@@ -34,7 +34,8 @@
 ## Machine Learning Explanation and Specifics
 - Columns were dropped that were not going to be used or were identical to another columns (ex: County Name and FIPS code hold the same data in different formats, FIPS code was retained for its easy joining capability to other dataframes.
 - Some data cleaning was needed to convert object columns to integers. This included removing commas from the entires. A label encoder was used to transform State into a numeric value
-- MinMaxScalar was used to present the data in a way that would not skew the results for large numbers (i.e. population or median income)
+- MinMaxScalar was used to present the data in a way that would not skew the results for large numbers (i.e. population or median income). 
+  - It was determined that the Standard Scaler was a better fit, so it was used with the the final version of the machine learning model.
 - An elbow graph was created to determine the number of clusters to identify
 - The final model was built using four clusters
 - The cluster column was was added to the county dataset and broken into a dataframe for each cluster (county_cluster0, county_cluster1 etc.)
